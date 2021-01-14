@@ -1,0 +1,126 @@
+{
+    "name": "test2",
+    "type": "ARM",
+    "mode": "Debug",
+    "toolchain": "AC6",
+    "dependenceList": [
+        {
+            "groupName": "custom",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [
+                        ".\\.eide\\deps",
+                        ".\\lib\\CMSIS"
+                    ],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": [
+                        "USE_STDPERIPH_DRIVER",
+                        "STM32F10X_MD"
+                    ]
+                }
+            ]
+        },
+        {
+            "groupName": "build-in",
+            "depList": [
+                {
+                    "name": "default",
+                    "incList": [],
+                    "libList": [],
+                    "sourceDirList": [],
+                    "defineList": [
+                        "DEBUG"
+                    ]
+                },
+                {
+                    "name": "toolchain",
+                    "incList": [
+                        ".\\..\\..\\..\\..\\..\\..\\..\\Keil_v5\\ARM\\ARMCLANG\\include",
+                        ".\\..\\..\\..\\..\\..\\..\\..\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx"
+                    ],
+                    "sourceDirList": [],
+                    "libList": [
+                        ".\\..\\..\\..\\..\\..\\..\\..\\Keil_v5\\ARM\\ARMCLANG\\lib"
+                    ],
+                    "defineList": []
+                }
+            ]
+        }
+    ],
+    "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "default",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "undefined",
+        "storageLayout": {
+            "RAM": [
+                {
+                    "tag": "IRAM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x20000000",
+                        "size": "0x2800"
+                    },
+                    "isChecked": "1",
+                    "noInit": false
+                }
+            ],
+            "ROM": [
+                {
+                    "tag": "IROM",
+                    "id": 1,
+                    "mem": {
+                        "startAddr": "0x08000000",
+                        "size": "0x10000"
+                    },
+                    "isChecked": "1",
+                    "isStartup": true
+                }
+            ]
+        },
+        "options": "null"
+    },
+    "uploader": "STLink",
+    "srcDirs": [
+        ".\\.eide\\deps",
+        ".\\src",
+        ".\\hal",
+        ".\\inc"
+    ],
+    "excludeList": [
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_bkp.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_can.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_cec.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_crc.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_dac.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_dbgmcu.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_dma.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_flash.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_fsmc.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_i2c.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_iwdg.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_pwr.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_rtc.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_sdio.c",
+        ".\\hal\\STM32F10x_StdPeriph_Driver\\src\\stm32f10x_wwdg.c",
+        ".\\src\\usart.c"
+    ],
+    "outDir": ".\\out",
+    "deviceName": "STM32F102C8",
+    "packDir": null,
+    "uploadConfig": {
+        "bin": ".\\out\\Debug\\test2.hex",
+        "proType": "SWD",
+        "runAfterProgram": true,
+        "speed": 4000,
+        "address": "0x08000000"
+    },
+    "miscInfo": {
+        "lastBuildTime": 1610609068502,
+        "uid": "9fc61a4a7fbab1a0de4ab26c3d5fe552",
+        "lastTelTime": 1610602442060
+    },
+    "version": "1.0"
+}

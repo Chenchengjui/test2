@@ -1,0 +1,66 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "jlink",
+            "servertype": "jlink",
+            "interface": "swd",
+            "executable": ".\\out\\Debug\\测试.elf",
+            "runToMain": true,
+            "device": "<MCU-NAME>"
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "openocd",
+            "servertype": "openocd",
+            "executable": ".\\out\\Debug\\测试.elf",
+            "runToMain": true,
+            "configFiles": [
+                "interface/<debugger-type>.cfg",
+                "target/<mcu-series>.cfg"
+            ]
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "stlink",
+            "servertype": "openocd",
+            "executable": ".\\out\\Debug\\test2.elf",
+            "runToMain": true,
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ]
+        },
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug (OpenOCD)",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "runToMain": true,
+            "executable": ".\\out\\Debug\\test2.elf",
+            "device": "STM32F103VCT6",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/.vscode/STM32F103xx.svd",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 8000000,
+                "swoFrequency": 2000000,
+                "source": "probe",
+                "decoders": [
+                    { "type": "console", "label": "ITM", "port": 0 }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            ".eideignore": "ignore"
+        },
+        "C_Cpp.default.intelliSenseMode": "gcc-arm",
+        "files.autoGuessEncoding": true,
+        "C_Cpp.default.cppStandard": "c++14",
+        "C_Cpp.default.cStandard": "c99",
+        "terminal.integrated.cursorStyle": "line",
+        "terminal.integrated.cursorBlinking": true,
+        "terminal.integrated.confirmOnExit": true,
+        "terminal.integrated.fontSize": 12,
+        "cortex-debug.openocdPath": "C:\\Users\\Makap\\Documents\\Work\\STM32\\TOOLCHAIN\\openocd-20200729\\OpenOCD-20200729-0.10.0\\bin\\openocd.exe"
+    }
+}

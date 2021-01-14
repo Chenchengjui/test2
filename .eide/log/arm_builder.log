@@ -1,0 +1,73 @@
+[2021-01-14 13:34:40]	[done]
+	build successfully !
+
+[2021-01-14 13:34:46]	[done]
+	build successfully !
+
+[2021-01-14 13:40:24]	compilation failed at : "c:\Users\Makap\Documents\Work\STM32\PRJ3\test2\src\sys.c", exit code: 1
+   在 unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds, List`1 doneList)
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-01-14 13:41:40]	compilation failed at : "c:\Users\Makap\Documents\Work\STM32\PRJ3\test2\src\usart.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-01-14 13:42:22]	compilation failed at : "c:\Users\Makap\Documents\Work\STM32\PRJ3\test2\src\usart.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-01-14 13:43:32]	[done]
+	build successfully !
+
+[2021-01-14 13:45:13]	[done]
+	build successfully !
+
+[2021-01-14 13:47:07]	[done]
+	build successfully !
+
+[2021-01-14 13:50:20]	[done]
+	build successfully !
+
+[2021-01-14 13:51:34]	[done]
+	build successfully !
+
+[2021-01-14 14:06:06]	[done]
+	build successfully !
+
+[2021-01-14 14:06:36]	compilation failed at : "c:\Users\Makap\Documents\Work\STM32\std_template\test2\src\main.c", exit code: 1
+   在 unify_builder.Program.Main(String[] args)
+
+[2021-01-14 14:06:50]	[done]
+	build successfully !
+
+[2021-01-14 14:08:30]	[done]
+	build successfully !
+
+[2021-01-14 14:08:39]	[done]
+	build successfully !
+
+[2021-01-14 14:08:46]	[done]
+	build successfully !
+
+[2021-01-14 14:08:52]	[done]
+	build successfully !
+
+[2021-01-14 14:18:12]	[done]
+	build successfully !
+
+[2021-01-14 14:25:06]	[done]
+	build successfully !
+
+[2021-01-14 14:26:12]	[done]
+	build successfully !
+
+[2021-01-14 14:33:11]	[done]
+	build successfully !
+
+[2021-01-14 14:33:18]	[done]
+	build successfully !
+
+[2021-01-14 14:33:22]	[done]
+	build successfully !
+
+[2021-01-14 15:24:32]	[done]
+	build successfully !
+

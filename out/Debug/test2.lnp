@@ -1,0 +1,22 @@
+--diag_suppress=L6329 --library_type=microlib --cpu=Cortex-M3 --lto --scatter "c:/Users/Makap/Documents/Work/STM32/std_template/test2/out/Debug/test2.sct" --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list ./out/Debug/test2.map
+./out/Debug/misc.o
+./out/Debug/stm32f10x_adc.o
+./out/Debug/stm32f10x_exti.o
+./out/Debug/stm32f10x_gpio.o
+./out/Debug/stm32f10x_rcc.o
+./out/Debug/stm32f10x_spi.o
+./out/Debug/stm32f10x_tim.o
+./out/Debug/stm32f10x_usart.o
+./out/Debug/system_stm32f10x.o
+./out/Debug/ZLG7289_STM32.o
+./out/Debug/beep.o
+./out/Debug/delay.o
+./out/Debug/exti.o
+./out/Debug/key.o
+./out/Debug/led.o
+./out/Debug/main.o
+./out/Debug/stm32f10x_it.o
+./out/Debug/sys.o
+./out/Debug/timer.o
+./out/Debug/startup_stm32f10x_md.o -o ./out/Debug/test2.axf
